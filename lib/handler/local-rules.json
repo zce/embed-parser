@@ -1,0 +1,24 @@
+[
+  {
+    "regex": "https?://v.youku.com/v_show/id_(.+).html",
+    "type": "video",
+    "version": "1.0",
+    "title": "YouKu Video",
+    "provider_name": "YouKu",
+    "provider_url": "https://www.youku.com",
+    "html": "<iframe src=\"http://player.youku.com/embed/${matches[1]}\" width=\"${width}\" height=\"${height}\" frameborder=\"0\" allowfullscreen></iframe>",
+    "width": 640,
+    "height": 360
+  },
+  {
+    "regex": "https?://www.bilibili.com/video/av(\\d+)",
+    "type": "video",
+    "version": "1.0",
+    "title": "Bilibili Video",
+    "provider_name": "Bilibili",
+    "provider_url": "https://www.bilibili.com",
+    "html": "<iframe src=\"http://player.bilibili.com/player.html?aid=${matches[1]}\" width=\"${width}\" height=\"${height}\" frameborder=\"0\" allowfullscreen></iframe>",
+    "width": 640,
+    "height": 360
+  }
+]
