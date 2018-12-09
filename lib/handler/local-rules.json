@@ -6,7 +6,7 @@
     "title": "YouKu Video",
     "provider_name": "YouKu",
     "provider_url": "https://www.youku.com",
-    "html": "<iframe src=\"http://player.youku.com/embed/${matches[1]}\" width=\"${width}\" height=\"${height}\" frameborder=\"0\" allowfullscreen></iframe>",
+    "html": "<iframe src=\"//player.youku.com/embed/${matches[1]}\" width=\"${width}\" height=\"${height}\" frameborder=\"0\" allowfullscreen></iframe>",
     "width": 640,
     "height": 360
   },
@@ -17,7 +17,7 @@
     "title": "Bilibili Video",
     "provider_name": "Bilibili",
     "provider_url": "https://www.bilibili.com",
-    "html": "<iframe src=\"http://player.bilibili.com/player.html?aid=${matches[1]}\" width=\"${width}\" height=\"${height}\" frameborder=\"0\" allowfullscreen></iframe>",
+    "html": "<iframe src=\"//player.bilibili.com/player.html?aid=${matches[1]}\" width=\"${width}\" height=\"${height}\" frameborder=\"0\" allowfullscreen></iframe>",
     "width": 640,
     "height": 360
   }

@@ -5,13 +5,13 @@ import { version } from '../package'
 test('extract-local-youku', async t => {
   const embed = await embedParser('https://v.youku.com/v_show/id_XMzkyODgxODM2OA==.html')
   t.is(embed.provider_name, 'YouKu')
-  t.is(embed.html, '<iframe src="http://player.youku.com/embed/XMzkyODgxODM2OA==" width="640" height="360" frameborder="0" allowfullscreen></iframe>')
+  t.is(embed.html, '<iframe src="//player.youku.com/embed/XMzkyODgxODM2OA==" width="640" height="360" frameborder="0" allowfullscreen></iframe>')
 })
 
 test('extract-local-bilibili', async t => {
   const embed = await embedParser('https://www.bilibili.com/video/av21536312')
   t.is(embed.provider_name, 'Bilibili')
-  t.is(embed.html, '<iframe src="http://player.bilibili.com/player.html?aid=21536312" width="640" height="360" frameborder="0" allowfullscreen></iframe>')
+  t.is(embed.html, '<iframe src="//player.bilibili.com/player.html?aid=21536312" width="640" height="360" frameborder="0" allowfullscreen></iframe>')
 })
 
 test('extract-oembed', async t => {
