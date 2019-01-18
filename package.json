@@ -1,6 +1,6 @@
 {
   "name": "embed-parser",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A parser for get embed data from url",
   "keywords": [
     "embed-parser",
