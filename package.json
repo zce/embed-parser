@@ -37,7 +37,7 @@
     "oembed-parser": "^1.2.2"
   },
   "devDependencies": {
-    "ava": "1.4.1",
+    "ava": "2.2.0",
     "nyc": "14.1.1",
     "standard": "13.0.2"
   },
