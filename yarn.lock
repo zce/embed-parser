@@ -680,6 +680,13 @@ ava@2.4.0:
     update-notifier "^3.0.1"
     write-file-atomic "^3.0.0"
 
+axios@^0.24.0:
+  version "0.24.0"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.24.0.tgz#804e6fa1e4b9c5288501dd9dff56a7a0940d20d6"
+  integrity sha512-Q6cWsys88HoPgAaFAVUb0WpPk0O8iTeisR9IMqy9G8AbO4NlpVknrnQS03zzF9PGAWgO3cgletO3VjV/P7VztA==
+  dependencies:
+    follow-redirects "^1.14.4"
+
 babel-plugin-dynamic-import-node@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-dynamic-import-node/-/babel-plugin-dynamic-import-node-2.3.0.tgz#f00f507bdaa3c3e3ff6e7e5e98d90a7acab96f7f"
@@ -704,6 +711,11 @@ balanced-match@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
   integrity sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
+
+bellajs@^10.0.2:
+  version "10.0.2"
+  resolved "https://registry.yarnpkg.com/bellajs/-/bellajs-10.0.2.tgz#4f120a2c6cc12cd7cdb216ce43318d9395889acd"
+  integrity sha512-C3dnPgAAS1wPs7Zjt6ZekU4Zo/oyrdJL4NiWtr2+v5zyj2n8McKZeDYQ0OFOJRgbU6ZcQNXLJFPJCfjEE3pElA==
 
 binary-extensions@^2.0.0:
   version "2.0.0"
@@ -1701,6 +1713,11 @@ flatted@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-2.0.1.tgz#69e57caa8f0eacbc281d2e2cb458d46fdb449e08"
   integrity sha512-a1hQMktqW9Nmqr5aktAux3JMNqaucxGcjtjWnZLHX7yyPCmlSV3M54nGYbqT8K+0GhF3NBgmJCc3ma+WOgX8Jg==
+
+follow-redirects@^1.14.4:
+  version "1.14.9"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.9.tgz#dd4ea157de7bfaf9ea9b3fbd85aa16951f78d8d7"
+  integrity sha512-MQDfihBQYMcyy5dhRDJUHcw7lb2Pv/TuE6xP1vyraLukNDHKbDxDNaOE3NbCAdKQApno+GPRyo1YAp89yCjK4w==
 
 foreground-child@^1.5.6:
   version "1.5.6"
@@ -2709,11 +2726,6 @@ nice-try@^1.0.4:
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
 
-node-fetch@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.3.0.tgz#1a1d940bbfb916a1d3e0219f037e89e71f8c5fa5"
-  integrity sha512-MOd8pV3fxENbryESLgVIeaGKrdl+uaYhCSSVkjeOb/31/njTpcis5aWfdqgNlHIrKOLRbMnfPINPOML2CIFeXA==
-
 normalize-package-data@^2.3.2, normalize-package-data@^2.3.4:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/normalize-package-data/-/normalize-package-data-2.4.0.tgz#12f95a307d58352075a04907b84ac8be98ac012f"
@@ -2840,13 +2852,13 @@ observable-to-promise@^1.0.0:
     is-observable "^2.0.0"
     symbol-observable "^1.0.4"
 
-oembed-parser@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/oembed-parser/-/oembed-parser-1.2.2.tgz#0ababb60eb6bef0538878b690eb71ecb7fdfb4d1"
-  integrity sha512-dFsRPQZTUvIG5EA0Gq9kWCfxxdt+hBk0D9xvYkrGq1lh0NyzJTMWkrJWFXGu7P/9MiP7t2VHvlRFsC4I3SuGPw==
+oembed-parser@^2.0.0:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/oembed-parser/-/oembed-parser-2.0.3.tgz#69fca201d91546dc2f7068ff618d97e5d74d05b8"
+  integrity sha512-lUWsU6qs8lS2lEA+NQ/ggWZWPwI93Ya+ou6NjgkA7GL5maSbCTmksiPLfajfwCCZ4g/BahsmkRt/foGKUDGy1g==
   dependencies:
-    node-fetch "^2.3.0"
-    promise-wtf "^1.2.4"
+    axios "^0.24.0"
+    bellajs "^10.0.2"
 
 once@^1.3.0, once@^1.3.1, once@^1.4.0:
   version "1.4.0"
@@ -3201,11 +3213,6 @@ progress@^2.0.0:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
-
-promise-wtf@^1.2.4:
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/promise-wtf/-/promise-wtf-1.2.4.tgz#8cbdd31ea10dee074fbb6387cbc96e413993376c"
-  integrity sha512-wOZ+ZUG0/Lsk+muOElLtteIteyvF5B1bNcVLhmlv6PDKcAAQGa5Bf0maN3rj73FWyjJE840MzeQyNE6KOKpgrg==
 
 prop-types@^15.7.2:
   version "15.7.2"

@@ -34,7 +34,7 @@
     "test": "nyc ava"
   },
   "dependencies": {
-    "oembed-parser": "^1.2.2"
+    "oembed-parser": "^2.0.0"
   },
   "devDependencies": {
     "ava": "2.4.0",
